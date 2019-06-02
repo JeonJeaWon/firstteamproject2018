@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>금사빠팀 소개페이지</title>
+
+    <!-- CSS -->
+    <link href="./guemsabba.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <!-- 폰트 -->  
+    <link href="https://fonts.googleapis.com/css?family=Marcellus|Nanum+Myeongjo:400,700,800|Oleo+Script:400,700&amp;subset=korean" rel="stylesheet">
+    <!-- openlayers js라이브러리 -->
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+</head>
+
+<body>
+    <!-- 상단nav바 -->
+    <nav>
+            <ul id="nav_main">
+                <li id="menu0"><img src="./logo_w.jpg" width="100px" height="70px"></li>
+                <li id="menu1"><a href="#home">Home</a></li>
+                <li id="menu2"><a href="#team">Team</a></li>
+                <li id="menu3"><a href="#rim">Sujung</a></li>
+                <li id="menu3"><a href="#jeon">Jaewon</a></li>
+                <li id="menu3"><a href="#han">Song-yi</a></li>
+                <li id="menu3"><a href="#kim">Yeonji</a></li>
+            </ul>
+    </nav>
+
+    <!-- 홈:멋사-금사빠팀 소개 -->
+    <header id="home">
+            
+            <div class="object">
+                    <img id="object_img" src="./object2.png">
+                    <div id="object_text">Friday♥sabba</div>
+                </div>
+                <div class="definition">
+                        <span class="korean_word">금사빠   </span><span class="english_word">geum sabba</span>
+                        <p>1. (명사)  ‘금방 사랑에 빠지는 사람’<br>      또는 ‘금방 사랑에서 빠져나오는 사람’을 줄여 이르는 말<br>
+                        2. (명사) 금요일 공강에 빠르게 스터디하는 아기사자들</p>                   
+                </div>
+            </div>
+            
+
+    </header>
+
+    <!-- 팀전체소개 -->
+    <section id="team">
+
+            <div class="team">
+                    <img id="girls" src="./girls.png">
+    </section>
+    <!-- 한송이소개 -->
+    <section id="han"></section>
+    <!-- 전재원소개 -->
+    <section id="jeon"></section>
+    <!-- 김연지소개 -->
+    <section id="kim"></section>
+    <!-- 임수정소개 -->
+    <section id="rim"></section>
+
+    <section id="position">
+        <div id="map" class="map" tabindex="0"></div>
+    </section>
+    <footer>
+        <span>Copyleft @ 2018 - All Lefts Reserved - Ewha like lion GuemSaBba</span>
+        <img 
+        <span>Created by GuemSaBba</span>
+    </footer>
+
+</body>
+<script>
+        var ol;
+
+        var map = new ol.Map({
+          layers: [
+            new ol.layer.Tile({
+                source: new ol.source.XYZ({
+      url: 'http://{1-4}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+    })
+            })
+          ],
+          target: 'map',
+          controls: ol.control.defaults({
+            attributionOptions: {
+              collapsible: false
+            }
+          }),
+          view: new ol.View({
+            center: [0, 0],
+            zoom: 2
+          })
+        });
+    </script>
+</html>

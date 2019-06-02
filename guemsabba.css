@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edebec;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #262626;
+}
+
+nav {
+    width: 100%;
+    background-color: #262626;
+    position: fixed;
+    z-index: 1;
+}
+
+#nav_main {
+    height: 70px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_main li {
+    text-align: center;
+}
+
+#nav_main li a {
+    text-decoration: none;
+    color: #edebec;
+}
+
+#menu0 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20pt;
+    color: #edebec;
+    margin-left: 20px;
+}
+
+#menu1,
+#menu2 {
+    flex-grow: 2;
+    font-weight: 600;
+    font-size: 22pt;
+}
+
+#menu2 {
+    margin-left: -50px;
+}
+
+#menu3 {
+    flex-grow: 1;
+    font-weight: 200;
+    padding-left: -50px;
+    padding-right: -50px;
+    text-decoration: underline;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.object {
+    position: relative;
+}
+
+#object_text {
+    font-family: 'Shrikhand', cursive;
+    font-size: 43pt;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+.definition {
+    font-weight: 700;
+    font-size: 15pt;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.korean_word {
+    font-weight: 800;
+    font-size: 40pt;
+}
+
+.english_word {
+    font-weight: 700;
+    font-size: 25pt;
+    color: #bcbcbc;
+}
+
+/* team */
+
+#team {
+    background-color: #d7d7d7;
+    height: 500px;
+    overflow: hidden;
+}
+
+.team_left,
+.team_right {
+    float: left;
+    width: 50%;
+}
+
+.team_left {
+    text-align: center;
+    height: 500px;
+}
+
+#girls {
+    width: 560px;
+    height: 300px;
+    border-bottom: 2px solid #262626;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+.team_right {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#team_logo {
+    width: 90%;
+    margin-top: 100px;
+}
+
+#team_text {
+    position: absolute;
+    left: 0;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-family: 'Shrikhand', cursive;
+    font-size: 23pt;
+    line-height: 110%;
+}
+
+#team_exp {
+    margin-bottom: 100px;
+    font-size: 15pt;
+    width: 700px;
+}
+
+/* han */
+
+td {
+    font-size: 12pt;
+}
+
+#han {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    line-height: 150%;
+}
+
+.td_left {
+    text-align: end;
+    padding-right: 30px;
+}
+
+.td_right {
+    text-align: start;
+    padding-left: 30px;
+}
+
+/* jeon */
+
+#jeon {
+    text-align: center;
+    margin: 0 auto;
+    align: center;
+    width: 710px;
+    height: 700px;
+}
+
+.Jeon {
+    text-align: center;
+}
+
+.J_table {
+    text-align: center;
+}
+
+.Jaewon {
+    display: inline-block;
+}
+
+/* kim */
+
+#kim {
+    text-align: center;
+    height: 700px;
+}
+
+/* rim */
+
+#rim {
+    text-align: center;
+}
+
+.container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    margin-top: 100px;
+}
+
+#korean_name {
+    font-size: 40pt;
+    font-weight: 800;
+    color: green;
+}
+
+#english_name {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #a7a7a7;
+}
+
+.grid {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: repeat(5, 75px);
+    font-size: 12pt;
+    line-height: 160%;
+}
+
+.item_1,
+.item_4,
+.item_6,
+.item_8 {
+    text-align: end;
+    padding-right: 30px;
+}
+
+.item_2 {
+    grid-row: 1/ span 4;
+    grid-column-start: 2;
+}
+
+.item_3,
+.item_5,
+.item_7,
+.item_9 {
+    text-align: start;
+    padding-left: 30px;
+}
+
+.property {
+    font-weight: 700;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flexbox img {
+    height: 120px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.flexbox h5 {
+    margin-top: 0;
+}
+
+/* place */
+
+#place {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a7a7a7;
+}
+
+#where_to_meet_us {
+    color: #272727;
+    text-align: center;
+    margin-left: 6%;
+}
+
+/*place*/
+
+#map {
+    height: 500px;
+    width: 70%;
+    border: 2px solid #262626;
+    margin-right: 1%;
+}
+
+/* footer */
+
+footer {
+    background-color: #272727;
+    color: #edebec;
+    height: 70px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.footer_left {
+    float: left;
+    margin-left: 40px;
+    line-height: 70px;
+}
+
+.footer_right {
+    float: right;
+    margin-right: 40px;
+    line-height: 70px;
+}
+
+.footer_right2 {
+    float: right;
+    margin-right: 40px;
+    line-height: 70px;
+    font-family: 'Kaushan Script', cursive;
+}
